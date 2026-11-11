@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Emunah • Corte &amp; Barba Tradicional | SJC</title>
+  <meta name="description" content="Barbearia tradicional no Jardim das Indústrias em São José dos Campos. Cortes de alta precisão, barboterapia com toalha quente e agendamento online simples.">
+  
+  <!-- Tipografia Oficial RIDA: Sora Uniform 400 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Oficiais -->
+  <link rel="stylesheet" href="assets/styles.css">
+  
+  <!-- Script de Interações & Abertura Splash 1.8s -->
+  <script src="assets/app.js" defer></script>
+</head>
+<body class="bg-nia-canvas">
+
+  <!-- ================= ABERTURA DE ENTRADA (1.8s • TESOURA CORTANDO • SEM BOTÃO • SEM TEXTO) ================= -->
+  <div id="siteSplash" class="site-splash" aria-hidden="true">
+    <div class="splash-scissors-container">
+      <svg class="scissors-svg" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="goldBladeGrad" x1="120" y1="120" x2="215" y2="120" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#C5A059" />
+            <stop offset="35%" stop-color="#F5E4B5" />
+            <stop offset="70%" stop-color="#C5A059" />
+            <stop offset="100%" stop-color="#8E6F33" />
+          </linearGradient>
+          <linearGradient id="goldBodyGrad" x1="40" y1="60" x2="160" y2="180" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#F2D898" />
+            <stop offset="50%" stop-color="#C5A059" />
+            <stop offset="100%" stop-color="#735520" />
+          </linearGradient>
+          <linearGradient id="edgeGrad" x1="120" y1="120" x2="215" y2="120" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+            <stop offset="50%" stop-color="#F7EAC7" stop-opacity="0.85" />
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.95" />
+          </linearGradient>
+        </defs>
+
+        <!-- METADE SUPERIOR (Lâmina + Haste + Anel com Descanso de Dedo) -->
+        <g class="scissor-half half-top">
+          <path d="M 120 120 L 212 120 C 205 113 172 108 120 114 Z" fill="url(#goldBladeGrad)" />
+          <path d="M 120 120 L 212 120" stroke="url(#edgeGrad)" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M 120 116 C 102 122 84 140 68 150" stroke="url(#goldBodyGrad)" stroke-width="6" stroke-linecap="round" fill="none" />
+          <circle cx="54" cy="160" r="17" stroke="url(#goldBodyGrad)" stroke-width="4.5" fill="none" />
+          <path d="M 40 170 C 30 180 26 191 32 195 C 38 197 44 190 48 178" stroke="url(#goldBodyGrad)" stroke-width="4" stroke-linecap="round" fill="none" />
+        </g>
+
+        <!-- METADE INFERIOR (Lâmina + Haste + Anel de Polegar) -->
+        <g class="scissor-half half-bottom">
+          <path d="M 120 120 L 212 120 C 205 127 172 132 120 126 Z" fill="url(#goldBladeGrad)" />
+          <path d="M 120 120 L 212 120" stroke="url(#edgeGrad)" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M 120 124 C 102 118 84 100 68 90" stroke="url(#goldBodyGrad)" stroke-width="6" stroke-linecap="round" fill="none" />
+          <circle cx="54" cy="80" r="17" stroke="url(#goldBodyGrad)" stroke-width="4.5" fill="none" />
+        </g>
+
+        <!-- PIVÔ CENTRAL (Parafuso Regulador de Precisão) -->
+        <circle cx="120" cy="120" r="8" fill="#0C121E" stroke="url(#goldBodyGrad)" stroke-width="3" />
+        <circle cx="120" cy="120" r="3.5" fill="#F2D898" />
+        <!-- Brilho de corte final -->
+        <circle cx="170" cy="120" r="6" fill="#FFF8E0" class="blade-gleam" filter="drop-shadow(0 0 6px #F2D898)" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- Fundo Liso com Glow Suave Atmosférico (Sem Grade) -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+
+  <div class="site-wrapper">
+
+    <!-- ================= 1. NAVBAR EDITORIAL LIMPA & ESPAÇADA ================= -->
+    <header class="nia-header">
+      <div class="container-nia header-nia-row">
+        
+        <a href="#inicio" class="nia-brand">
+          <img src="assets/logo-emunah.png" alt="Barbearia Emunah" class="nia-logo-img">
+          <span class="nia-brand-text">BARBEARIA EMUNAH</span>
+        </a>
+
+        <div class="nia-header-actions">
+          <nav class="nia-nav-links">
+            <a href="#procedimentos">procedimentos</a>
+            <a href="#barbeiros">barbeiros</a>
+            <a href="#estrutura">estrutura</a>
+            <a href="#localizacao">localização</a>
+          </nav>
+          <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="nia-btn-pill-gold">
+            <span>Agendar Horário</span>
+            <span class="arrow-up">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ================= 2. HERO SECTION COM DEGRADÊ NA IMAGEM & LOGO AMPLIADA ================= -->
+    <section id="inicio" class="nia-hero-section">
+      
+      <!-- Fundo com Imagem do Barbeiro & Degradê Atmosférico -->
+      <div class="hero-backdrop" aria-hidden="true">
+        <img src="assets/hero-barber-action.jpg" alt="" class="hero-backdrop-img">
+        <div class="hero-backdrop-gradient"></div>
+      </div>
+
+      <div class="container-nia hero-content-relative">
+        
+        <div class="hero-lockup-with-logo">
+          
+          <!-- Logo Oficial: SÓ O CÍRCULO, MAIOR E NO CANTO ESQUERDO -->
+          <div class="hero-logo-column">
+            <img src="assets/logo-emunah.png" alt="Logo Barbearia Emunah" class="hero-logo-circle-only">
+          </div>
+
+          <!-- Conteúdo Puro: Apenas Título Principal e Botão para Agendar -->
+          <div class="hero-text-column">
+
+            <h1 class="hero-title-balanced">
+              ESTILO &amp; TRADIÇÃO PARA O HOMEM MODERNO
+            </h1>
+
+            <div class="hero-actions-clean">
+              <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="nia-btn-pill-gold btn-hero">
+                <span>Agendar Horário</span>
+                <span class="arrow-up">↗</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 3. SEÇÃO DE PROCEDIMENTOS (COM BOTÃO EXPANSÍVEL) ================= -->
+    <section id="procedimentos" class="nia-section">
+      <div class="container-nia">
+        
+        <div class="nia-section-header">
+          <div class="section-meta-left">
+            <span class="section-num">( 01 )</span>
+            <span class="section-label">TABELA &amp; PROCEDIMENTOS</span>
+          </div>
+          <h2 class="nia-section-title">procedimentos</h2>
+        </div>
+
+        <div class="nia-cards-grid">
+          
+          <!-- Card 1: Cabelo Adulto -->
+          <article class="nia-card">
+            <div class="nia-card-media">
+              <img src="assets/corte-fade-1.jpg" alt="Cabelo Adulto" class="nia-card-img" loading="lazy">
+              <span class="nia-media-badge">CABELO</span>
+              <span class="nia-price-badge">R$ 50,00</span>
+            </div>
+            <div class="nia-card-content">
+              <div class="nia-card-title-row">
+                <h3 class="nia-card-title">Cabelo Adulto</h3>
+                <span class="nia-card-duration">30 min</span>
+              </div>
+              <p class="nia-card-desc">
+                Degradê, tesoura ou máquina à sua escolha. Acabamento na navalha e lavagem inclusa.
+              </p>
+              <div class="nia-card-action-row">
+                <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="nia-card-btn">
+                  <span>Agendar Horário</span>
+                  <span class="arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Barboterapia -->
+          <article class="nia-card">
+            <div class="nia-card-media">
+              <img src="assets/barboterapia-toalha.jpg" alt="Barboterapia com Toalha Quente" class="nia-card-img" loading="lazy">
+              <span class="nia-media-badge">BARBOTERAPIA</span>
+              <span class="nia-price-badge">R$ 50,00</span>
+            </div>
+            <div class="nia-card-content">
+              <div class="nia-card-title-row">
+                <h3 class="nia-card-title">Barboterapia</h3>
+                <span class="nia-card-duration">30 min</span>
+              </div>
+              <p class="nia-card-desc">
+                Toalha quente, massagem facial relaxante, esfoliante e alinhamento de barba na navalha.
+              </p>
+              <div class="nia-card-action-row">
+                <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="nia-card-btn">
+                  <span>Agendar Horário</span>
+                  <span class="arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Cabelo & Barba Terapia (Combo Mais Pedido) -->
+          <article class="nia-card nia-card-vip">
+            <div class="nia-vip-ribbon">
+              <svg class="ribbon-star-icon" width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span>MAIS PEDIDO</span>
+            </div>
+            <div class="nia-card-media">
+              <img src="assets/corte-fade-2.jpg" alt="Combo Cabelo e Barba Terapia" class="nia-card-img" loading="lazy">
+              <span class="nia-media-badge badge-gold">VIP COMBO</span>
+              <span class="nia-price-badge badge-price-gold">R$ 90,00</span>
+            </div>
+            <div class="nia-card-content">
+              <div class="nia-card-title-row">
+                <h3 class="nia-card-title">Cabelo &amp; Barba Terapia</h3>
+                <span class="nia-card-duration">1h 00min</span>
+              </div>
+              <p class="nia-card-desc">
+                Combo completo: corte personalizado + barboterapia com toalha quente e massagem facial.
+              </p>
+              <div class="nia-card-action-row">
+                <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="nia-card-btn btn-gold-card">
+                  <span>Agendar Combo</span>
+                  <span class="arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Botão Pequeno para Ver Tabela Completa de Procedimentos -->
+        <div class="nia-toggle-wrap">
+          <button id="toggleMoreServices" type="button" class="nia-btn-toggle-small" aria-expanded="false" aria-controls="extraProceduresList">
+            <span class="btn-toggle-text">Ver todos os procedimentos (10)</span>
+            <span class="btn-toggle-arrow">▾</span>
+          </button>
+        </div>
+
+        <!-- Tabela Completa de Demais Procedimentos (Oculta por padrão com botão expansível) -->
+        <div id="extraProceduresList" class="nia-services-list-container is-collapsed">
+          
+          <div class="list-item-row">
+            <span class="item-code">01</span>
+            <span class="item-name">Barba Express</span>
+            <span class="item-meta">Uma altura de máquina e acabamento na máquina shaver • 15min</span>
+            <span class="item-price">R$ 35,00</span>
+            <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="item-btn">Agendar ↗</a>
+          </div>
+
+          <div class="list-item-row">
+            <span class="item-code">02</span>
+            <span class="item-name">Pezinho / Acabamento</span>
+            <span class="item-meta">Alinhamento e contorno preciso de nuca e costeletas • 15min</span>
+            <span class="item-price">R$ 15,00</span>
+            <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="item-btn">Agendar ↗</a>
+          </div>
+
+          <div class="list-item-row">
+            <span class="item-code">03</span>
+            <span class="item-name">Sobrancelha</span>
+            <span class="item-meta">Design e alinhamento masculino na lâmina descartável • 10min</span>
+            <span class="item-price">R$ 10,00</span>
+            <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="item-btn">Agendar ↗</a>
+          </div>
+
+          <div class="list-item-row">
+            <span class="item-code">04</span>
+            <span class="item-name">Cera Nariz e Orelhas</span>
+            <span class="item-meta">Remoção higiênica e rápida de pelos com cera morna • 15min</span>
+            <span class="item-price">R$ 25,00</span>
+            <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="item-btn">Agendar ↗</a>
+          </div>
+
+          <div class="list-item-row">
+            <span class="item-code">05</span>
+            <span class="item-name">Bigode</span>
+            <span class="item-meta">Desenho e aparo detalhado de bigode • 15min</span>
+            <span class="item-price">R$ 15,00</span>
+            <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="item-btn">Agendar ↗</a>
+          </div>
+
+          <div class="list-item-row">
+            <span class="item-code">06</span>
+            <span class="item-name">Pigmentação Barba</span>
+            <span class="item-meta">Camuflagem sutil de falhas e realce de linhas (Alexandre Maldi) • 30min</span>
+            <span class="item-price">R$ 30,00</span>
+            <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="item-btn">Agendar ↗</a>
+          </div>
+
+          <div class="list-item-row">
+            <span class="item-code">07</span>
+            <span class="item-name">Hidratação Capilar</span>
+            <span class="item-meta">Produtos profissionais com touca de calor para melhor resultado • 20min</span>
+            <span class="item-price">R$ 35,00</span>
+            <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="item-btn">Agendar ↗</a>
+          </div>
+
+          <div class="list-item-row">
+            <span class="item-code">08</span>
+            <span class="item-name">Selagem a Partir</span>
+            <span class="item-meta">Alisamento e alinhamento de cabelo sem formol (Willian) • 1h 20min</span>
+            <span class="item-price">R$ 100,00</span>
+            <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="item-btn">Agendar ↗</a>
+          </div>
+
+          <div class="list-item-row">
+            <span class="item-code">09</span>
+            <span class="item-name">Barba Terapia Promocional</span>
+            <span class="item-meta">Segunda a quarta até as 16h30 (exceto feriados) • 30min</span>
+            <span class="item-price">R$ 45,00</span>
+            <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="item-btn">Agendar ↗</a>
+          </div>
+
+          <div class="list-item-row">
+            <span class="item-code">10</span>
+            <span class="item-name">Cabelo &amp; Barboterapia Promo</span>
+            <span class="item-meta">Segunda a quarta até as 16h30 (exceto feriados) • 1h 00min</span>
+            <span class="item-price">R$ 80,00</span>
+            <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="item-btn">Agendar ↗</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 4. SEÇÃO "OS BARBEIROS" (A CARA DO NEGÓCIO) ================= -->
+    <section id="barbeiros" class="nia-section">
+      <div class="container-nia">
+        
+        <div class="nia-section-header">
+          <div class="section-meta-left">
+            <span class="section-num">( 02 )</span>
+            <span class="section-label">A CARA DO NEGÓCIO</span>
+          </div>
+          <h2 class="nia-section-title">barbeiros</h2>
+        </div>
+
+        <div class="nia-team-showcase">
+          
+          <div class="nia-team-image-box">
+            <img src="assets/barbeiros-equipe.jpg" alt="Equipe Barbearia Emunah - Willian e Alexandre Maldi" class="nia-team-photo" loading="lazy">
+            <div class="nia-team-floating-badge">
+              <span>WILLIAN &amp; ALEXANDRE MALDI // BARBEIROS OFICIAIS</span>
+            </div>
+          </div>
+
+          <div class="nia-team-editorial-text">
+            <span class="nia-badge-gold">MESTRES DA NAVALHA</span>
+            <h3 class="nia-team-heading">
+              WILLIAN &amp; ALEXANDRE MALDI
+            </h3>
+            <p class="nia-team-body">
+              Atendimento atencioso e pontual. Especialistas em cortes clássicos na tesoura, degradê na régua e barboterapia com toalha quente.
+            </p>
+
+            <div class="nia-team-perks">
+              <div class="perk-pill">
+                <span class="perk-bullet">•</span>
+                <span>Cortes na tesoura e fade de precisão</span>
+              </div>
+              <div class="perk-pill">
+                <span class="perk-bullet">•</span>
+                <span>Barboterapia com toalha quente &amp; vapor</span>
+              </div>
+              <div class="perk-pill">
+                <span class="perk-bullet">•</span>
+                <span>Linha de produtos profissionais Zoteri</span>
+              </div>
+            </div>
+
+            <div class="nia-team-cta-wrap">
+              <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="nia-btn-pill-gold">
+                <span>Agendar com a Equipe</span>
+                <span class="arrow-up">↗</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 5. ESTRUTURA & COMODIDADES ================= -->
+    <section id="estrutura" class="nia-section">
+      <div class="container-nia">
+        
+        <div class="nia-section-header">
+          <div class="section-meta-left">
+            <span class="section-num">( 03 )</span>
+            <span class="section-label">AMBIENTE &amp; COMODIDADES</span>
+          </div>
+          <h2 class="nia-section-title">estrutura</h2>
+        </div>
+
+        <div class="nia-gallery-showcase">
+          <div class="gallery-card-large">
+            <img src="assets/interior-sala.jpg" alt="Salão da Barbearia Emunah" class="gallery-full-img" loading="lazy">
+            <div class="gallery-label-box">
+              <span>SALÃO PRINCIPAL CLIMATIZADO</span>
+            </div>
+          </div>
+
+          <div class="gallery-card-half">
+            <img src="assets/interior-espelho.jpg" alt="Bancadas e espelhos" class="gallery-full-img" loading="lazy">
+            <div class="gallery-label-box">
+              <span>BANCADAS PROFISSIONAIS</span>
+            </div>
+          </div>
+
+          <div class="gallery-card-half">
+            <img src="assets/barbearia-produtos.jpg" alt="Produtos Zoteri" class="gallery-full-img" loading="lazy">
+            <div class="gallery-label-box">
+              <span>PRODUTOS PREMIUM ZOTERI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nia-amenities-row">
+          <div class="amenity-pill-card">
+            <span class="amenity-badge-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
+            </span>
+            <span>Estacionamento Gratuito</span>
+          </div>
+          <div class="amenity-pill-card">
+            <span class="amenity-badge-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            </span>
+            <span>Wi-Fi de Alta Velocidade</span>
+          </div>
+          <div class="amenity-pill-card">
+            <span class="amenity-badge-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+            </span>
+            <span>Café &amp; Cerveja Cortesia</span>
+          </div>
+          <div class="amenity-pill-card">
+            <span class="amenity-badge-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M12 2v20"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m4.93 19.07 4.24-4.24"/></svg>
+            </span>
+            <span>Ambiente 100% Climatizado</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 6. AVALIAÇÕES REAIS ================= -->
+    <section id="avaliacoes" class="nia-section">
+      <div class="container-nia">
+        
+        <div class="nia-section-header">
+          <div class="section-meta-left">
+            <span class="section-num">( 04 )</span>
+            <span class="section-label">GOOGLE MAPS • 5.0 ESTRELAS</span>
+          </div>
+          <h2 class="nia-section-title">avaliações</h2>
+        </div>
+
+        <div class="nia-reviews-grid">
+          
+          <div class="nia-review-card">
+            <div class="review-top-meta">
+              <span class="reviewer-name">Kelvin Sousa</span>
+              <div class="review-stars-group" aria-label="5 de 5 estrelas">
+                <svg class="star-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="#C5A059"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="#C5A059"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="#C5A059"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="#C5A059"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="#C5A059"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+            <p class="review-statement">
+              “Atendimento excelente! Barbeiro caprichoso, corte ficou muito bom e o ambiente é bem agradável. Com certeza voltarei e recomendo!”
+            </p>
+            <div class="review-footer-badge">
+              <span>Google Avaliação Real</span>
+            </div>
+          </div>
+
+          <div class="nia-review-card">
+            <div class="review-top-meta">
+              <span class="reviewer-name">Marcelo Carvalho</span>
+              <div class="review-stars-group" aria-label="5 de 5 estrelas">
+                <svg class="star-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="#C5A059"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="#C5A059"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="#C5A059"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="#C5A059"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-icon-gold" width="13" height="13" viewBox="0 0 24 24" fill="#C5A059"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+            <p class="review-statement">
+              “A Barbearia Emunah é um lugar onde ficamos à vontade. Sempre atendendo na melhor forma. Já estou há mais de 2 anos cortando aqui e sempre saio contente.”
+            </p>
+            <div class="review-footer-badge">
+              <span>Local Guide • 14 avaliações</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 7. LOCALIZAÇÃO & HORÁRIOS ================= -->
+    <section id="localizacao" class="nia-section">
+      <div class="container-nia">
+        
+        <div class="nia-section-header">
+          <div class="section-meta-left">
+            <span class="section-num">( 05 )</span>
+            <span class="section-label">ENDEREÇO &amp; HORÁRIOS</span>
+          </div>
+          <h2 class="nia-section-title">localização</h2>
+        </div>
+
+        <div class="nia-location-layout">
+          
+          <div class="location-details-nia">
+            
+            <div class="loc-data-block">
+              <span class="loc-sub">ENDEREÇO</span>
+              <p class="loc-main">
+                R. Nelson Cesar de Oliveira, 134 - Lj 11<br>
+                Jardim das Industrias, São José dos Campos - SP<br>
+                <span class="loc-zip">CEP: 12240-220</span>
+              </p>
+            </div>
+
+            <div class="loc-data-block">
+              <span class="loc-sub">HORÁRIOS</span>
+              <p class="loc-main">
+                <strong>Terça a Sábado:</strong> 09:30 às 20:00<br>
+                <em>Quarta-feira: 09:30 às 20:00</em><br>
+                <span class="text-alert">Domingo e Segunda: Fechado</span>
+              </p>
+            </div>
+
+            <div class="loc-data-block">
+              <span class="loc-sub">WHATSAPP</span>
+              <p class="loc-phone-gold">(12) 97407-0207</p>
+            </div>
+
+            <div class="loc-actions-group">
+              <a href="https://maps.app.goo.gl/JrF5C36MJzQLimf66" target="_blank" rel="noopener noreferrer" class="nia-btn-pill-gold">
+                <span>Google Maps ↗</span>
+              </a>
+              <a href="https://encurtador.com.br/bcEKS" target="_blank" rel="noopener noreferrer" class="nia-btn-pill-outline">
+                <span>Traçar Rota Direta ↗</span>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="location-map-wrapper">
+            <iframe 
+              src="https://maps.google.com/maps?q=R.+Nelson+Cesar+de+Oliveira,+134+-+Lj+11+-+Jardim+das+Industrias,+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP,+12240-220&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+              title="Mapa Barbearia Emunah" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 8. FOOTER EDITORIAL ================= -->
+    <footer class="nia-footer">
+      <div class="container-nia">
+        
+        <div class="footer-cta-huge">
+          <span class="footer-label-pill">HORA MARCADA</span>
+          <h2 class="footer-huge-heading">AGENDE SEU HORÁRIO ONLINE.</h2>
+          <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=dec3b026b81ee6d890a8f82f75c94a2e" target="_blank" rel="noopener noreferrer" class="footer-big-btn">
+            <span>Abrir o Simples Agenda</span>
+            <span class="btn-arrow-huge">↗</span>
+          </a>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div class="footer-brand-wrap">
+            <img src="assets/logo-emunah.png" alt="Barbearia Emunah" class="footer-logo">
+            <span class="footer-brand-name">BARBEARIA EMUNAH</span>
+          </div>
+
+          <div class="footer-credits-wrap">
+            <span>© 2026 Barbearia Emunah. Todos os direitos reservados.</span>
+            <span>Desenvolvido por <a href="https://rida-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" class="gold-link">Agência RIDA • Sua Casa Própria na Internet</a></span>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- ================= 9. BOTÃO FLUTUANTE DE WHATSAPP ================= -->
+    <aside class="floating-wa-wrap" aria-label="Contato no WhatsApp">
+      <a href="https://wa.me/5512974070207?text=Ol%C3%A1%2C+vi+o+site+da+Barbearia+Emunah+e+gostaria+de+agendar+um+hor%C3%A1rio%21" target="_blank" rel="noopener noreferrer" class="floating-wa-circle" title="Falar no WhatsApp">
+        <span class="wa-pulse-halo" aria-hidden="true"></span>
+        <svg class="wa-icon-direct" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.83.829 2.791.829h.005c3.18 0 5.766-2.586 5.767-5.766.001-3.181-2.584-5.768-5.766-5.768zm3.387 8.163c-.143.404-.714.772-1.02.812-.306.04-.698.057-2.112-.527-1.808-.747-2.983-2.593-3.073-2.713-.09-.12-0.732-.974-.732-1.859 0-.885.464-1.32.628-1.498.165-.178.36-.223.48-.223.12 0 .24.001.345.006.111.005.26-.042.406.31.15.361.51 1.246.555 1.336.045.09.075.195.015.315-.06.12-.09.195-.18.3-.09.105-.188.234-.27.315-.09.09-.184.188-.079.368.105.18.468.772 1.005 1.25.69.615 1.272.806 1.452.896.18.09.285.075.39-.045.105-.12.45-.525.57-.705.12-.18.24-.15.405-.09.165.06 1.05.495 1.23.585.18.09.3.135.345.21.045.075.045.435-.098.839z"/>
+        </svg>
+      </a>
+    </aside>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
++--------------------------------------------------------------------------------------------------------------------------+
+| nav                                                                                                                      |
+| [ico:scissors] [t1: BARBEARIA EMUNAH // TRADICIONAL & MODERNA]       [lnk: Início] [lnk: Serviços] [lnk: Espaço] [lnk: Avaliações] |
+|                                                                      [btn: [ico:whatsapp] Agendar Horário (12) 97407-0207] |
++--------------------------------------------------------------------------------------------------------------------------+
+| hero (Dark Navy #111A29 + Aged Gold #C5A059 • Estilo & Tradição Vintage/Moderno)                                          |
+| [t2: BARBEARIA TRADICIONAL & CONTEMPORÂNEA // JARDIM DAS INDÚSTRIAS - SJC]                                                |
+| [h1: ESTILO & TRADIÇÃO PARA O HOMEM MODERNO]                                                                             |
+| [h1: CORTES DE PRECISÃO, BARBOTERAPIA E ATENDIMENTO EXCLUSIVO]                                                           |
+| [t1: Sua casa própria de cuidados masculinos em São José dos Campos. Ambiente acolhedor com toalha quente, navalha afiada |
+| e profissionais que dominam o estilo clássico e contemporâneo.]                                                          |
+|                                                                                                                          |
+| [btn: [ico:calendar] Agendar Horário no WhatsApp]       [btn2: [ico:list] Explorar Serviços & Preços]                        |
+|                                                                                                                          |
+| +----------------------------------------------------------------------------------------------------------------------+ |
+| | media_hero (Faixa de Destaques Rápidos da Barbearia Emunah)                                                           | |
+| |                                                                                                                      | |
+| | +-----------------------+   +-------------------------+   +------------------------+   +---------------------------+ | |
+| | | card_highlight1       |   | card_highlight2         |   | card_highlight3        |   | card_highlight4           | | |
+| | | [ico:scissors]        |   | [ico:flame]             |   | [ico:coffee]           |   | [ico:car]                 | | |
+| | | [t1: Cortes & Fade]   |   | [t1: Barboterapia]      |   | [t1: Cerveja & Café]   |   | [t1: Estacionamento 100%] | | |
+| | | [t3: Tesoura & navalha] | [t3: Toalha quente e balm]|   | [t3: Cortesia da casa] |   | [t3: Gratuito no local]   | | |
+| | +-----------------------+   +-------------------------+   +------------------------+   +---------------------------+ | |
+| +----------------------------------------------------------------------------------------------------------------------+ |
++--------------------------------------------------------------------------------------------------------------------------+
+| section_services (Tabela Oficial de Serviços RIDA • Abas Rápidas & Botões Diretos de Agendamento)                       |
+| [t2: PROCEDIMENTOS & VALORES OFICIAIS]                                                                                   |
+| [h2: Serviços Executados com Maestria e Precisão]                                                                        |
+| [btn: Todos os Serviços]  [btn2: Cortes Clássicos]  [btn2: Barba & Terapia]  [btn2: Combos Especiais]                    |
+|                                                                                                                          |
+| +-----------------------------------+ +-----------------------------------+ +----------------------------------+         |
+| | card_service1                     | | card_service2                     | | card_service3 (Destaque VIP)     |         |
+| | [img: corte_tradicional]          | | [img: barba_completa]             | | [img: combo_especial]            |         |
+| | [t3: CLÁSSICO & CONTEMPORÂNEO]    | | [t3: TRADICIONAL & RELAXANTE]     | | [t3: EXPERIÊNCIA COMPLETA]       |         |
+| | [h3: Corte Tradicional]           | | [h3: Barba Completa]              | | [h3: Combo Especial]             |         |
+| | [t2: Corte clássico na tesoura ou | | [t2: Barbaterapia completa com    | | [t2: Corte de cabelo sob medida  |         |
+| | degradê com máquina e alinhamento]| | toalha quente, navalha e óleo]    | | + barboterapia com toalha quente]|         |
+| |                                   | |                                   | |                                  |         |
+| | [t1: R$ 60,00]      [t3: ~40 min] | | [t1: R$ 45,00]      [t3: ~35 min] | | [t1: R$ 95,00]     [t3: ~1h15 min] |         |
+| | [btn: [ico:whatsapp] Agendar]     | | [btn: [ico:whatsapp] Agendar]     | | [btn: [ico:whatsapp] Agendar]    |         |
+| +-----------------------------------+ +-----------------------------------+ +----------------------------------+         |
+|                                                                                                                          |
+| +-----------------------------------+ +-----------------------------------+ +----------------------------------+         |
+| | card_service4                     | | card_service5                     | | card_service6                    |         |
+| | [img: pezinho_sobrancelha]        | | [img: pigmentacao_cabelo]         | | [img: selagem_hidratacao]        |         |
+| | [t3: FINALIZAÇÃO & DETALHES]      | | [t3: CAMUFLAGEM & DEFINIÇÃO]      | | [t3: TRATAMENTO CAPILAR]         |         |
+| | [h3: Pezinho & Sobrancelha]       | | [h3: Pigmentação de Barba/Fios]   | | [h3: Selagem / Hidratação]       |         |
+| | [t2: Alinhamento das linhas com   | | [t2: Correção sutil e camuflagem  | | [t2: Alinhamento térmico suave e |         |
+| | navalha e acabamento fino]        | | de fios brancos com efeito natural| | hidratação profunda para os fios]|         |
+| |                                   | |                                   | |                                  |         |
+| | [t1: R$ 30,00]      [t3: ~20 min] | | [t1: R$ 40,00]      [t3: ~25 min] | | [t1: R$ 75,00]      [t3: ~45 min] |         |
+| | [btn: [ico:whatsapp] Agendar]     | | [btn: [ico:whatsapp] Agendar]     | | [btn: [ico:whatsapp] Agendar]    |         |
+| +-----------------------------------+ +-----------------------------------+ +----------------------------------+         |
++--------------------------------------------------------------------------------------------------------------------------+
+| section_about (Espaço Físico & Produtos Reais da Barbearia Emunah)                                                       |
+| [t2: CONHEÇA A NOSSA ESTRUTURA]                                                                                          |
+| [h2: Onde Conforto, Estilo e Amizade se Encontram]                                                                       |
+| [t1: Espaço moderno com toque industrial, pensado para ser o seu momento de pausa na rotina corrida.]                     |
+|                                                                                                                          |
+| +----------------------------------------------------------------------------------------------------------------------+ |
+| | media_gallery (Fotos Reais do Espaço da Barbearia Emunah)                                                            | |
+| | +--------------------------------+ +--------------------------------+ +-------------------------------------+        | |
+| | | card_photo1                    | | card_photo2                    | | card_photo3                         |        | |
+| | | [img: barbearia_ambiente]      | | [img: barbearia_produtos]      | | [img: barbearia_detalhes_cadeiras]  |        | |
+| | | [t3: Poltronas vintage recliná-| | [t3: Prateleira com balms,     | | [t3: Estética industrial com paredes|        | |
+| | | veis e ambiente climatizado]   | | pomadas e ceras premium]       | | em cimento queimado e espelhos]     |        | |
+| | +--------------------------------+ +--------------------------------+ +-------------------------------------+        | |
+| +----------------------------------------------------------------------------------------------------------------------+ |
+|                                                                                                                          |
+| +----------------------------------------------------------------------------------------------------------------------+ |
+| | card_amenities (Comodidades Confirmadas no Google Maps)                                                              | |
+| | [ico:check] [t1: Estacionamento descoberto gratuito]   [ico:check] [t1: Estacionamento gratuito na rua]              | |
+| | [ico:check] [t1: Estacionamento no próprio local]      [ico:check] [t1: Wi-Fi gratuito e café espresso cortesia]      | |
+| +----------------------------------------------------------------------------------------------------------------------+ |
++--------------------------------------------------------------------------------------------------------------------------+
+| section_reviews (Depoimentos Reais de Clientes Verificados no Google Maps)                                               |
+| [t2: PROVA SOCIAL DE QUEM FREQUENTA]                                                                                    |
+| [h2: Avaliado com 5 Estrelas pelos Nossos Clientes]                                                                     |
+| [ico:star] [ico:star] [ico:star] [ico:star] [ico:star] [t1: Nota Máxima no Google Maps]                                 |
+|                                                                                                                          |
+| +-------------------------------------------------------+ +------------------------------------------------------------+ |
+| | quote1 (Avaliação Kelvin Sousa)                       | | quote2 (Avaliação Marcelo Carvalho - Local Guide)          | |
+| | [av: kelvin_avatar] [t1: Kelvin Sousa]                | | [av: marcelo_avatar] [t1: Marcelo Carvalho]               | |
+| | [ico:star][ico:star][ico:star][ico:star][ico:star]    | | [ico:star][ico:star][ico:star][ico:star][ico:star]         | |
+| | [t3: Cliente Verificado no Google]                    | | [t3: Local Guide • 14 avaliações no Google]                | |
+| | [t2: "Atendimento excelente! Barbeiro caprichoso,     | | [t2: "A Barbearia Emunah é um lugar onde ficamos bem       | |
+| | corte ficou muito bom e o ambiente é bem agradável.   | | a vontade. Sempre atendendo a gente na melhor forma        | |
+| | Com certeza voltarei e recomendo a barbearia!"]       | | possível. Já estou a mais de 2 anos cortando cabelo e      | |
+| |                                                       | | fazendo a barba e sempre saio contente."]                  | |
+| | [t3: Resposta do proprietário: Obrigado pelo carinho!]| |                                                            | |
+| +-------------------------------------------------------+ +------------------------------------------------------------+ |
++--------------------------------------------------------------------------------------------------------------------------+
+| section_location (Localização, Horário & Rotas Integradas)                                                               |
+| [t2: ONDE ESTAMOS & HORÁRIOS DE ATENDIMENTO]                                                                             |
+| [h2: Fácil Acesso no Jardim das Indústrias]                                                                              |
+|                                                                                                                          |
+| +-------------------------------------------------------+ +------------------------------------------------------------+ |
+| | card_address (Dados Oficiais da Barbearia)            | | media_map (Mapa Interativo do Google Maps)                 | |
+| | [ico:map-pin] [t1: Endereço:]                         | | [map: iframe_google_maps_interativo]                     | |
+| | [t2: R. Nelson Cesar de Oliveira, 134 - Lj 11]        | |                                                            | |
+| | [t2: Jardim das Industrias, São José dos Campos - SP] | |                                                            | |
+| | [t3: CEP: 12240-220]                                  | |                                                            | |
+| |                                                       | |                                                            | |
+| | [ico:clock] [t1: Horário de Funcionamento:]           | |                                                            | |
+| | [t2: Quarta-feira (e Terça a Sábado): 09:30 às 20:00] | |                                                            | |
+| | [t3: Domingo e Segunda: Fechado]                      | |                                                            | |
+| |                                                       | |                                                            | |
+| | [ico:phone] [t1: WhatsApp Oficial:]                   | |                                                            | |
+| | [t2: (12) 97407-0207]                                 | |                                                            | |
+| |                                                       | |                                                            | |
+| | [btn: [ico:map] Abrir no Google Maps]                 | |                                                            | |
+| | (https://maps.app.goo.gl/JrF5C36MJzQLimf66)           | |                                                            | |
+| | [btn2: [ico:navigation] Traçar Rota Rápida]           | |                                                            | |
+| | (https://encurtador.com.br/bcEKS)                     | |                                                            | |
+| +-------------------------------------------------------+ +------------------------------------------------------------+ |
++--------------------------------------------------------------------------------------------------------------------------+
+| footer                                                                                                                   |
+| [ico:scissors] [t1: BARBEARIA EMUNAH // CORTE & BARBA]                                                                   |
+| [t2: Sua casa própria de estilo e cuidados masculinos em São José dos Campos.]                                           |
+| [lnk: Início] [lnk: Serviços] [lnk: Espaço] [lnk: Avaliações] [lnk: Localização]                                          |
+| [t3: © 2026 Barbearia Emunah. Todos os direitos reservados.]                                                             |
+| [t3: Desenvolvido por Agência RIDA • Sua Casa Própria na Internet]                                                       |
++--------------------------------------------------------------------------------------------------------------------------+
+| floating_cta                                                                                                             |
+| [btn: [ico:whatsapp] Agendar no WhatsApp]                                                                                |
++--------------------------------------------------------------------------------------------------------------------------+
