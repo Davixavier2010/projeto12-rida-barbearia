@@ -1,7 +1,0 @@
-{
-  "stdout": "",
-  "stderr": "Usage: impeccable loop install [--version X.Y.Z] [--no-open]\n       impeccable loop update [--no-open]\n",
-  "exit": 1,
-  "signal": null,
-  "files": {}
-}
